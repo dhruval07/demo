@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Product</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+    <svg style="display: none;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-facebook" viewBox="0 0 24 24"><title>Facebook</title><path class="path1" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zM12 22.909c-6.025 0-10.909-4.884-10.909-10.909s4.884-10.909 10.909-10.909 10.909 4.885 10.909 10.909c0 6.025-4.884 10.909-10.909 10.909zM13.084 9.409c0-0.441 0.045-0.677 0.724-0.677h0.907v-1.642h-1.452c-1.743 0-2.357 0.821-2.357 2.202v1.066h-1.087v1.642h1.087v4.91h2.175v-4.91h1.452l0.193-1.642h-1.645l0.003-0.949z"></path></symbol><symbol id="icon-linkedin" viewBox="0 0 24 24"><title>Linkdein</title><path class="path1" d="M8.723 7.636c-0.601 0-1.087 0.489-1.087 1.093 0 0.603 0.487 1.093 1.087 1.093s1.087-0.489 1.087-1.093c0-0.604-0.487-1.093-1.087-1.093zM7.636 16.364h2.174v-6.008h-2.174v6.008zM14.922 10.355c-1.617 0-1.833 0.973-1.833 0.973l0.002-0.965h-2.182v6h2.182v-3.273c0 0 0-1.099 0.927-1.099 0.521 0 0.709 0.488 0.709 1.099v3.273h2.182v-3.273c0-1.708-0.742-2.735-1.987-2.735zM12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12c6.627 0 12-5.373 12-12s-5.373-12-12-12zM12 22.909c-6.025 0-10.909-4.884-10.909-10.909s4.884-10.909 10.909-10.909 10.909 4.885 10.909 10.909c0 6.025-4.884 10.909-10.909 10.909z"></path></symbol><symbol id="icon-twitter" viewBox="0 0 24 24"><title>Twitter</title><path class="path1" d="M17.698 7.798c-0.433 0.253-0.911 0.436-1.421 0.535-0.408-0.428-0.989-0.695-1.634-0.695-1.236 0-2.238 0.987-2.238 2.203 0 0.172 0.019 0.34 0.057 0.502-1.86-0.092-3.509-0.969-4.613-2.302-0.193 0.326-0.303 0.704-0.303 1.108 0 0.764 0.395 1.438 0.995 1.833-0.367-0.011-0.712-0.111-1.013-0.276-0.001 0.010-0.001 0.018-0.001 0.028 0 1.067 0.772 1.958 1.796 2.161-0.188 0.050-0.385 0.077-0.59 0.077-0.144 0-0.284-0.014-0.421-0.039 0.284 0.875 1.111 1.511 2.090 1.53-0.766 0.591-1.731 0.943-2.78 0.943-0.181 0-0.358-0.010-0.534-0.030 0.991 0.625 2.167 0.989 3.431 0.989 4.117 0 6.368-3.356 6.368-6.268 0-0.095-0.002-0.19-0.007-0.284 0.437-0.311 0.816-0.699 1.117-1.14-0.401 0.175-0.832 0.293-1.285 0.346 0.462-0.273 0.817-0.705 0.984-1.219zM12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zM12 22.909c-6.025 0-10.909-4.884-10.909-10.909s4.884-10.909 10.909-10.909 10.909 4.885 10.909 10.909c0 6.025-4.884 10.909-10.909 10.909z"></path></symbol><symbol id="icon-google-plus" viewBox="0 0 1316.572110494133 1024"><title>google-plus</title><path class="path1" d="M821.143 521.714q0 118.857-49.714 211.714t-141.714 145.143-210.857 52.286q-85.143 0-162.857-33.143t-133.714-89.143-89.143-133.714-33.143-162.857 33.143-162.857 89.143-133.714 133.714-89.143 162.857-33.143q163.429 0 280.571 109.714l-113.714 109.143q-66.857-64.571-166.857-64.571-70.286 0-130 35.429t-94.571 96.286-34.857 132.857 34.857 132.857 94.571 96.286 130 35.429q47.429 0 87.143-13.143t65.429-32.857 44.857-44.857 28-47.429 12.286-42.286h-237.714v-144h395.429q6.857 36 6.857 69.714zM1316.571 452v120h-119.429v119.429h-120v-119.429h-119.429v-120h119.429v-119.429h120v119.429h119.429z"></path></symbol><symbol id="icon-angle-right" viewBox="0 0 11 32"><title>angle-right</title><path class="path1" d="M10.625 17.143q0 0.232-0.179 0.411l-8.321 8.321q-0.179 0.179-0.411 0.179t-0.411-0.179l-0.893-0.893q-0.179-0.179-0.179-0.411t0.179-0.411l7.018-7.018-7.018-7.018q-0.179-0.179-0.179-0.411t0.179-0.411l0.893-0.893q0.179-0.179 0.411-0.179t0.411 0.179l8.321 8.321q0.179 0.179 0.179 0.411z"></path></symbol><symbol id="icon-angle-left" viewBox="0 0 12 32"><title>angle-left</title><path class="path1" d="M11.196 9.714q0 0.232-0.179 0.411l-7.018 7.018 7.018 7.018q0.179 0.179 0.179 0.411t-0.179 0.411l-0.893 0.893q-0.179 0.179-0.411 0.179t-0.411-0.179l-8.321-8.321q-0.179-0.179-0.179-0.411t0.179-0.411l8.321-8.321q0.179-0.179 0.411-0.179t0.411 0.179l0.893 0.893q0.179 0.179 0.179 0.411z"></path></symbol><symbol id="icon-close" viewBox="0 0 24 24"><title>close</title><path class="path1" d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z"></path></symbol><symbol id="icon-product-chat" viewBox="0 0 28 24"><title>product-chat</title><path class="path1" fill="#fff" d="M7.837 21.551h1.959c0.245 0 0.49-0.245 0.49-0.49s-0.245-0.49-0.49-0.49h-1.959v-3.282c2.302-0.833 3.918-2.988 3.918-5.535v-0.49h7.837c0.539 0 0.98 0.441 0.98 0.98v9.796c0 0.539-0.441 0.98-0.98 0.98h-10.776c-0.539 0-0.98-0.441-0.98-0.98v-0.49z"></path><path class="path2" d="M27.429 20.816v-7.347l-3.918 1.567v4.261l3.918 1.518zM22.531 19.592v-4.898c0-0.196 0.098-0.343 0.294-0.441v0 0c0 0 0 0 0 0l4.849-1.959c0.098-0.049 0.147-0.049 0.245-0.049 0.245 0 0.49 0.245 0.49 0.49v8.816c0 0.245-0.245 0.49-0.49 0.49-0.098 0-0.147 0-0.196-0.049v0l-4.849-1.959c0 0 0 0 0 0v0c-0.245-0.098-0.343-0.245-0.343-0.441z"></path><path class="path3" d="M10.776 10.286h0.98v0.98h-0.98v-0.98z"></path><path class="path4" fill="#fff" d="M11.755 10.286h-0.98c0-0.245 0.245-0.49 0.49-0.49s0.49 0.245 0.49 0.49z"></path><path class="path5" d="M9.796 10.286h0.98v0.98h-0.98v-0.98z"></path><path class="path6" fill="#fff" d="M7.837 16.261c1.714-0.735 2.939-2.498 2.939-4.506v-0.49h0.98v0.49c0 2.547-1.616 4.751-3.918 5.535v-1.029z"></path><path class="path7" fill="#fff" d="M9.796 20.571c0.245 0 0.49 0.245 0.49 0.49s-0.245 0.49-0.49 0.49h-1.959v-0.98h1.959z"></path><path class="path8" d="M8.816 10.286h0.98v0.98h-0.98v-0.98z"></path><path class="path9" fill="#fff" d="M9.796 11.755c0 1.469-0.784 2.694-1.959 3.38v-1.224c0.588-0.539 0.98-1.322 0.98-2.204v-0.49h0.98v0.539z"></path><path class="path10" d="M6.857 20.571h0.98v0.98h-0.98v-0.98z"></path><path class="path11" d="M7.837 17.29v3.282h-0.98v-3.037c0.343-0.049 0.686-0.147 0.98-0.245z"></path><path class="path12" d="M7.837 16.261v1.078c-0.294 0.098-0.637 0.196-0.98 0.245v-0.98c0.343-0.098 0.686-0.245 0.98-0.343z"></path><path class="path13" d="M7.837 15.135v1.078c-0.294 0.147-0.637 0.245-0.98 0.294v-0.98c0.343-0.049 0.686-0.196 0.98-0.392z"></path><path class="path14" d="M7.837 13.959v1.224c-0.294 0.196-0.637 0.294-0.98 0.392v-1.029c0.392-0.147 0.686-0.343 0.98-0.588z"></path><path class="path15" d="M8.816 11.265c-0.539 0-0.98 0.441-0.98 0.98v1.714c-0.294 0.245-0.588 0.441-0.98 0.588v-2.302c0-1.078 0.882-1.959 1.959-1.959v0.98z"></path><path class="path16" d="M8.816 23.020h10.776c0.539 0 0.98-0.441 0.98-0.98v-9.796c0-0.539-0.441-0.98-0.98-0.98h-7.837v-0.98h7.837c1.078 0 1.959 0.882 1.959 1.959v9.796c0 1.078-0.882 1.959-1.959 1.959h-10.776c-1.078 0-1.959-0.882-1.959-1.959v-0.49h0.98v0.49c0 0.539 0.441 0.98 0.98 0.98z"></path><path class="path17" d="M5.878 14.694c0.343 0 0.686-0.049 0.98-0.196v1.029c-0.294 0.098-0.637 0.098-0.98 0.098-2.155 0-3.918-1.763-3.918-3.918v-7.788c0-2.155 1.763-3.918 3.918-3.918s3.918 1.763 3.918 3.918v6.367h-0.98v-1.469h-5.878v2.939c0 1.616 1.322 2.939 2.939 2.939zM8.816 3.918c0-1.616-1.322-2.939-2.939-2.939s-2.939 1.322-2.939 2.939v3.918h5.878v-3.918z"></path><path class="path18" d="M5.878 16.653c0.343 0 0.686-0.049 0.98-0.098v0.98c-0.147 0.049-0.343 0.049-0.49 0.049v2.939h0.49v0.98h-4.898c-0.245 0-0.49-0.245-0.49-0.49s0.245-0.49 0.49-0.49h3.429v-2.939c-3.037-0.245-5.388-2.743-5.388-5.829v-1.469c0-0.245 0.196-0.49 0.49-0.49s0.49 0.245 0.49 0.49v1.469c0 2.694 2.204 4.898 4.898 4.898z"></path></symbol><symbol id="icon-product-assistant" viewBox="0 0 24 24"><title>product-assistant</title><path class="path1" d="M10.364 10.364c0-0.327-0.218-0.545-0.545-0.545s-0.545 0.218-0.545 0.545c0 0.327 0.218 0.545 0.545 0.545s0.545-0.218 0.545-0.545zM12 10.909c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545zM21.818 6.545v-3.382c0.655-0.218 1.091-0.818 1.091-1.527 0-0.927-0.709-1.636-1.636-1.636s-1.636 0.709-1.636 1.636c0 0.709 0.436 1.309 1.091 1.527v3.382h-2.182v-1.091c0-0.6-0.491-1.091-1.091-1.091h-10.909c-0.6 0-1.091 0.491-1.091 1.091v1.091h-3.273c-1.2 0-2.182 0.982-2.182 2.182v13.091c0 1.2 0.982 2.182 2.182 2.182h19.636c1.2 0 2.182-0.982 2.182-2.182v-13.091c0-1.2-0.982-2.182-2.182-2.182zM6.545 5.455h10.909v1.091h-10.909v-1.091zM21.818 22.909h-19.636c-0.6 0-1.091-0.491-1.091-1.091h21.818c0 0.6-0.491 1.091-1.091 1.091zM22.909 9.818h-1.636c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545h1.636v2.727h-2.236c-0.273-1.527-1.582-2.727-3.218-2.727-1.8 0-3.273 1.473-3.273 3.273s1.473 3.273 3.273 3.273c1.636 0 2.945-1.2 3.218-2.727h2.236v6h-21.818v-6h2.236c0.273 1.527 1.582 2.727 3.218 2.727 1.8 0 3.273-1.473 3.273-3.273s-1.473-3.273-3.273-3.273c-1.636 0-2.945 1.2-3.218 2.727h-2.236v-2.727h1.636c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545h-1.636v-1.091c0-0.6 0.491-1.091 1.091-1.091h19.636c0.6 0 1.091 0.491 1.091 1.091v1.091zM19.636 14.182c0 1.2-0.982 2.182-2.182 2.182s-2.182-0.982-2.182-2.182c0-1.2 0.982-2.182 2.182-2.182s2.182 0.982 2.182 2.182zM4.364 14.182c0-1.2 0.982-2.182 2.182-2.182s2.182 0.982 2.182 2.182c0 1.2-0.982 2.182-2.182 2.182s-2.182-0.982-2.182-2.182zM13.091 19.636h2.182v-1.091h-2.182v1.091zM14.182 9.818c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545zM8.727 19.636h2.182v-1.091h-2.182v1.091zM13.091 13.091h-2.182v2.182h2.182v-2.182z"></path></symbol><symbol id="icon-product-integration" viewBox="0 0 24 24"><title>product-integration</title><path class="path1" d="M20.182 17.455h-7.145c-0.218-0.927-1.091-1.636-2.127-1.636s-1.855 0.709-2.127 1.636h-4.964c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545h4.964c0.218 0.927 1.091 1.636 2.127 1.636s1.855-0.709 2.127-1.636h7.145c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545zM10.909 19.091c-0.6 0-1.091-0.491-1.091-1.091s0.491-1.091 1.091-1.091 1.091 0.491 1.091 1.091c0 0.6-0.491 1.091-1.091 1.091zM21.818 0h-19.636c-1.2 0-2.182 0.982-2.182 2.182v19.636c0 1.2 0.982 2.182 2.182 2.182h19.636c1.2 0 2.182-0.982 2.182-2.182v-19.636c0-1.2-0.982-2.182-2.182-2.182zM22.909 21.818c0 0.6-0.491 1.091-1.091 1.091h-19.636c-0.6 0-1.091-0.491-1.091-1.091v-19.636c0-0.6 0.491-1.091 1.091-1.091h19.636c0.6 0 1.091 0.491 1.091 1.091v19.636zM20.182 11.455h-1.691c-0.218-0.927-1.091-1.636-2.127-1.636s-1.855 0.709-2.127 1.636h-10.418c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545h10.418c0.218 0.927 1.091 1.636 2.127 1.636s1.855-0.709 2.127-1.636h1.691c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545zM16.364 13.091c-0.6 0-1.091-0.491-1.091-1.091s0.491-1.091 1.091-1.091 1.091 0.491 1.091 1.091-0.491 1.091-1.091 1.091zM20.182 5.455h-9.327c-0.218-0.927-1.091-1.636-2.127-1.636s-1.855 0.709-2.127 1.636h-2.782c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545h2.782c0.218 0.927 1.091 1.636 2.127 1.636s1.855-0.709 2.127-1.636h9.327c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545zM8.727 7.091c-0.6 0-1.091-0.491-1.091-1.091s0.491-1.091 1.091-1.091 1.091 0.491 1.091 1.091c0 0.6-0.491 1.091-1.091 1.091z"></path></symbol><symbol id="icon-product-project" viewBox="0 0 20 24"><title>product-project</title><path class="path1" d="M6 17.455h-2.182c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545h2.182c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545zM4.909 19.636h-1.091c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545h1.091c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545zM17.455 0h-10.909c-1.2 0-2.182 0.982-2.182 2.182v0.545c0 0.327 0.218 0.545 0.545 0.545s0.545-0.218 0.545-0.545v-0.545c0-0.6 0.491-1.091 1.091-1.091h10.909c0.6 0 1.091 0.491 1.091 1.091v15.273c0 0.6-0.491 1.091-1.091 1.091h-0.545c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545h0.545c1.2 0 2.182-0.982 2.182-2.182v-15.273c0-1.2-0.982-2.182-2.182-2.182zM13.091 4.364h-10.909c-1.2 0-2.182 0.982-2.182 2.182v15.273c0 1.2 0.982 2.182 2.182 2.182h10.909c1.2 0 2.182-0.982 2.182-2.182v-15.273c0-1.2-0.982-2.182-2.182-2.182zM14.182 21.818c0 0.6-0.491 1.091-1.091 1.091h-10.909c-0.6 0-1.091-0.491-1.091-1.091v-13.691c1.309 1.036 2.836 1.473 5.018 1.636 0.218 0.655 0.818 1.145 1.527 1.145s1.364-0.491 1.527-1.145c2.182-0.164 3.655-0.6 5.018-1.636v13.691zM7.091 9.273c0-0.327 0.218-0.545 0.545-0.545s0.545 0.218 0.545 0.545c0 0.327-0.218 0.545-0.545 0.545s-0.545-0.218-0.545-0.545zM14.182 6.764c-1.091 1.145-2.673 1.745-5.018 1.909-0.273-0.6-0.818-1.036-1.527-1.036s-1.255 0.436-1.527 1.036c-2.345-0.164-3.927-0.764-5.018-1.909v-0.218c0-0.6 0.491-1.091 1.091-1.091h10.909c0.6 0 1.091 0.491 1.091 1.091v0.218z"></path></symbol><symbol id="icon-product-file" viewBox="0 0 24 24"><title>product-file</title><path class="path1" d="M15.285 13.095c0.313 0 0.536-0.223 0.536-0.536 0-0.134-0.045-0.268-0.179-0.402l-3.263-3.263c-0.089-0.089-0.223-0.179-0.402-0.179-0.134 0-0.268 0.045-0.402 0.179l-3.263 3.263c-0.089 0.089-0.179 0.223-0.179 0.402 0 0.313 0.223 0.536 0.536 0.536 0.134 0 0.268-0.045 0.402-0.179l2.324-2.324v12.871c0 0.313 0.223 0.536 0.536 0.536s0.536-0.223 0.536-0.536v-12.871l2.324 2.324c0.179 0.089 0.313 0.179 0.492 0.179zM20.693 6.972c0-0.134 0-0.313 0-0.447 0.045-3.575-2.905-6.525-6.525-6.525-2.503 0-4.693 1.43-5.81 3.486-0.402-0.134-0.849-0.223-1.296-0.223-2.101 0-3.799 1.698-3.799 3.799 0 0.268 0.045 0.536 0.089 0.804-1.966 0.67-3.352 2.503-3.352 4.693 0 2.726 2.19 4.916 4.916 4.916h4.916c0.313 0 0.536-0.223 0.536-0.536s-0.223-0.536-0.536-0.536h-4.916c-2.101 0-3.799-1.698-3.799-3.799 0-1.654 1.028-3.084 2.592-3.62l0.939-0.313-0.223-0.939c-0.045-0.179-0.045-0.402-0.045-0.581 0-1.52 1.207-2.726 2.726-2.726 0.313 0 0.626 0.045 0.939 0.179l0.894 0.313 0.447-0.849c0.939-1.788 2.816-2.905 4.827-2.905 2.994 0 5.453 2.458 5.453 5.453 0 0.089 0 0.179 0 0.268v0.089l-0.045 0.76 0.715 0.313c1.609 0.67 2.637 2.279 2.637 4.022 0 2.413-1.966 4.38-4.38 4.38h-4.38c-0.313 0-0.536 0.223-0.536 0.536s0.223 0.536 0.536 0.536h4.38c2.994 0 5.453-2.458 5.453-5.453-0.045-2.324-1.43-4.246-3.352-5.095z"></path></symbol><symbol id="icon-product-task" viewBox="0 0 24 24"><title>product-task</title><path class="path1" d="M7.091 20.727h13.091c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545h-13.091c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545zM20.182 10.909h-4.364c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545h4.364c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545zM20.182 8.727c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545zM5.455 3.273h16.909c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545h-16.909c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545zM7.091 1.091h14.182c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545h-14.182c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545zM20.182 13.091h-4.364c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545h4.364c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545zM18 8.727c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545zM20.182 15.273h-4.364c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545h4.364c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545zM7.091 16.364h5.455c0.327 0 0.545-0.218 0.545-0.545v-4.364c0-0.327-0.218-0.545-0.545-0.545h-5.455c-0.327 0-0.545 0.218-0.545 0.545v4.364c0 0.327 0.218 0.545 0.545 0.545zM7.636 12h4.364v3.273h-4.364v-3.273zM7.091 18.545h13.091c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545h-13.091c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545zM22.909 4.364h-18.545c-0.6 0-1.091 0.491-1.091 1.091v2.182h-2.182c-0.6 0-1.091 0.491-1.091 1.091v12c0 1.8 1.473 3.273 3.273 3.273h19.636c0.6 0 1.091-0.491 1.091-1.091v-17.455c0-0.6-0.491-1.091-1.091-1.091zM22.909 22.909h-19.636c-1.2 0-2.182-0.982-2.182-2.182v-12h2.182v11.455c0 0.327 0.218 0.545 0.545 0.545s0.545-0.218 0.545-0.545v-14.727h18.545v17.455zM9.273 8.727c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545zM7.091 8.727c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545zM11.455 8.727h4.364c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545h-4.364c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545z"></path></symbol><symbol id="icon-product-mobile" viewBox="0 0 13 24"><title>product-mobile</title><path class="path1" d="M6.545 22.364c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545zM10.909 0h-8.727c-1.2 0-2.182 0.982-2.182 2.182v19.636c0 1.2 0.982 2.182 2.182 2.182h8.727c1.2 0 2.182-0.982 2.182-2.182v-19.636c0-1.2-0.982-2.182-2.182-2.182zM12 21.818c0 0.6-0.491 1.091-1.091 1.091h-8.727c-0.6 0-1.091-0.491-1.091-1.091v-1.091h10.909v1.091zM12 19.636h-10.909v-15.273h10.909v15.273zM12 3.273h-10.909v-1.091c0-0.6 0.491-1.091 1.091-1.091h8.727c0.6 0 1.091 0.491 1.091 1.091v1.091zM7.091 1.636h-1.091c-0.327 0-0.545 0.218-0.545 0.545s0.218 0.545 0.545 0.545h1.091c0.327 0 0.545-0.218 0.545-0.545s-0.218-0.545-0.545-0.545z"></path></symbol></defs></svg>
+    <div class="video-modal modal fade" id="tour-video-modal" tabindex="-1" role="dialog" aria-labelledby="tour-video-modal" data-video="https://www.youtube.com/embed/videoseries?list=PLV7TgSx6E1tNu2tMu0DPpSxYLfbDEEv8y;&amp;autoplay=1"><div class="modal-dialog" role="document"><a class="close-button" data-dismiss="modal"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></a><div class="modal-content"><iframe src=""></iframe></div></div></div>
+    <header class="main-header">
+        <div class="navbar inverse">
+            <a href="/">
+                <img class="logo" src="https://gridle.io/img/logos/gridle-logo.svg" alt="Gridle Logo" data-collapsed-src="https://gridle.io/img/logos/gridle-logo.svg" data-src="https://gridle.io/img/logos/gridle-logo.svg">
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/product">Product</a>
+                    </li>
+                    <li>
+                        <a data-toggle="modal" data-target="#tour-video-modal">Tour</a>
+                    </li>
+                    <li>
+                        <a href="/pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="navbar-btn filled-btn" href="https://app.gridle.io/signup">Sign Up Free</a>
+                    </li>
+                    <li>
+                        <a class="navbar-btn outline-btn" href="https://app.gridle.io/">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="product-banner">
+        <div class="content">
+            <h1 class="extrabold-heading">Teamwork in harmony. Everything's built-in!</h1>
+            <div class="product-features">
+                <a class="product-features__feature" href="#product-project">
+                    <svg class="icon">
+                        <use xlink:href="#icon-product-project"></use>
+                    </svg><span>Project Management</span>
+                </a>
+                <a class="product-features__feature" href="#product-task">
+                    <svg class="icon">
+                        <use xlink:href="#icon-product-task"></use>
+                    </svg><span>Task Management</span>
+                </a>
+                <a class="product-features__feature" href="#product-chat">
+                    <svg class="icon">
+                        <use xlink:href="#icon-product-chat"></use>
+                    </svg><span>Chats &amp; Video calls</span>
+                </a>
+                <a class="product-features__feature" href="#product-file">
+                    <svg class="icon">
+                        <use xlink:href="#icon-product-file"></use>
+                    </svg><span>File Sharing</span>
+                </a>
+                <a class="product-features__feature" href="#product-integration">
+                    <svg class="icon">
+                        <use xlink:href="#icon-product-integration"></use>
+                    </svg><span>Integrations</span>
+                </a>
+                <a class="product-features__feature" href="#product-feature-boxes">
+                    <svg class="icon">
+                        <use xlink:href="#icon-product-assistant"></use>
+                    </svg><span>Personal Assistant</span>
+                </a>
+                <a class="product-features__feature" href="#product-feature-boxes">
+                    <svg class="icon">
+                        <use xlink:href="#icon-product-mobile"></use>
+                    </svg><span>Go Mobile</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="product__intro">
+        <div class="content">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="intro-info">
+                        <div class="infobox active" data-toggle="switch" data-switch-index="1" data-img-src="https://gridle.io/img/product/banner-1.png">
+                            <h2>We call it Desk</h2>
+                            <p>Desk will intelligently sort out all your priorities from your calendar, projects or to-dos so you have a bird-eye view, always.</p>
+                        </div>
+                        <div class="infobox" data-toggle="switch" data-switch-index="2" data-img-src="https://gridle.io/img/product/banner-2.png">
+                            <h2>One place for all your Work</h2>
+                            <p>Gridle brings together all your files, chats, projects, tasks and colleagues so you have everything you need in one place.</p>
+                        </div>
+                        <div class="infobox" data-toggle="switch" data-switch-index="3" data-img-src="https://gridle.io/img/product/banner-3.png">
+                            <h2>Start to finish</h2>
+                            <p>Walk into work with your daily agenda; schedule meetings, get reminded when tasks are due &amp; get a monthly view of your commitments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="intro-screens"><img class="img-responsive" id="switcherImage" src="https://gridle.io/img/product/banner-1.png" alt="feature-image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product__feature">
+        <div class="content inverse" id="product-project">
+            <div class="feature-desc">
+                <h2>Accomplish Projects</h2>
+                <p>Every team needs a plan to accomplish things, a place to store <b>files</b>, an environment to have <b>conversations</b> and a shared area for <b>managing priorities</b>. Gridle Projects is just that.</p>
+                <p><a data-toggle="modal" data-target="#feature-video-modal" data-video="https://www.youtube.com/embed/bydf3yUMqqA?list=PLV7TgSx6E1tNu2tMu0DPpSxYLfbDEEv8y;&amp;autoplay=1">See how projects work in Gridle &gt;</a></p>
+            </div>
+            <div class="feature-screen" data-toggle="modal" data-target="#feature-video-modal" data-video="https://www.youtube.com/embed/bydf3yUMqqA?list=PLV7TgSx6E1tNu2tMu0DPpSxYLfbDEEv8y;&amp;autoplay=1">
+                <svg class="play" viewBox="0 0 230 230" xmlns="http://www.w3.org/2000/svg" style="display: inline;">
+                    <g class="video-play-icon">
+                        <path class="play-icon-shape" fill="#D8D8D8" opacity="0.6" stroke-width="10" stroke="#979797" d="m115,218c56.88533,0 103,-46.11467 103,-103c0,-56.88533 -46.11467,-103 -103,-103c-56.88533,0 -103,46.11467 -103,103c0,56.88533 46.11467,103 103,103z"></path>
+                        <path class="play-icon-shape triangle" fill="#979797" opacity="0.6" d="m96.243385,156.810455c-4.297058,2.494705 -7.780502,0.497131 -7.780502,-4.474564l0,-75.571342c0,-4.965935 3.487946,-6.966644 7.780502,-4.474564l65.011436,37.743156c4.297028,2.49472 4.292526,6.542053 0,9.034134l-65.011436,37.743179z"></path>
+                    </g>
+                </svg><img class="img-responsive" src="https://gridle.io/img/product/product-project.png" alt="Custom workflows and templates">
+            </div>
+        </div>
+    </section>
+    <section class="product__feature">
+        <div class="content" id="product-task">
+            <div class="feature-desc">
+                <h2>Manage Work with Tasks</h2>
+                <p><b>Recurring tasks</b>, Checklists, comments, discussions, hash-tags, team mentions, <b>files and statuses</b>. Also, Gridle understands your <b>natural language</b>. It doesn’t get better than this.</p>
+                <p><a data-toggle="modal" data-target="#feature-video-modal" data-video="https://www.youtube.com/embed/knhEgeoCZ18?list=PLV7TgSx6E1tNu2tMu0DPpSxYLfbDEEv8y;&amp;autoplay=1">See how tasks work &gt;</a></p>
+            </div>
+            <div class="feature-screen" data-toggle="modal" data-target="#feature-video-modal" data-video="https://www.youtube.com/embed/knhEgeoCZ18?list=PLV7TgSx6E1tNu2tMu0DPpSxYLfbDEEv8y;&amp;autoplay=1">
+                <svg class="play" viewBox="0 0 230 230" xmlns="http://www.w3.org/2000/svg" style="display: inline;">
+                    <g class="video-play-icon">
+                        <path class="play-icon-shape" fill="#D8D8D8" opacity="0.6" stroke-width="10" stroke="#979797" d="m115,218c56.88533,0 103,-46.11467 103,-103c0,-56.88533 -46.11467,-103 -103,-103c-56.88533,0 -103,46.11467 -103,103c0,56.88533 46.11467,103 103,103z"></path>
+                        <path class="play-icon-shape triangle" fill="#979797" opacity="0.6" d="m96.243385,156.810455c-4.297058,2.494705 -7.780502,0.497131 -7.780502,-4.474564l0,-75.571342c0,-4.965935 3.487946,-6.966644 7.780502,-4.474564l65.011436,37.743156c4.297028,2.49472 4.292526,6.542053 0,9.034134l-65.011436,37.743179z"></path>
+                    </g>
+                </svg>
+                <img class="img-responsive" src="https://gridle.io/img/product/product-task.png" alt="Manage Work with Tasks">
+            </div>
+        </div>
+    </section>
+    <section class="product__feature">
+        <div class="content inverse" id="product-chat">
+            <div class="feature-desc">
+                <h2>Real-time Messaging</h2>
+                <p>People like to talk. And ideas flow when they do. Gridle offers <b>Persistent, searchable and real-time</b> chat that makes it easier to get moving. <b>Team chat &amp; Video calls are a bonus!</b></p>
+                <p><a data-toggle="modal" data-target="#feature-video-modal" data-video="https://www.youtube.com/embed/vV_LmYIwg4c?list=PLV7TgSx6E1tNu2tMu0DPpSxYLfbDEEv8y;&amp;autoplay=1">See how chat work &gt;</a></p>
+            </div>
+            <div class="feature-screen" data-toggle="modal" data-target="#feature-video-modal" data-video="https://www.youtube.com/embed/vV_LmYIwg4c?list=PLV7TgSx6E1tNu2tMu0DPpSxYLfbDEEv8y;&amp;autoplay=1">
+                <svg class="play" viewBox="0 0 230 230" xmlns="http://www.w3.org/2000/svg" style="display: inline;">
+                    <g class="video-play-icon">
+                        <path class="play-icon-shape" fill="#D8D8D8" opacity="0.6" stroke-width="10" stroke="#979797" d="m115,218c56.88533,0 103,-46.11467 103,-103c0,-56.88533 -46.11467,-103 -103,-103c-56.88533,0 -103,46.11467 -103,103c0,56.88533 46.11467,103 103,103z"></path>
+                        <path class="play-icon-shape triangle" fill="#979797" opacity="0.6" d="m96.243385,156.810455c-4.297058,2.494705 -7.780502,0.497131 -7.780502,-4.474564l0,-75.571342c0,-4.965935 3.487946,-6.966644 7.780502,-4.474564l65.011436,37.743156c4.297028,2.49472 4.292526,6.542053 0,9.034134l-65.011436,37.743179z"></path>
+                    </g>
+                </svg><img class="img-responsive" src="https://gridle.io/img/product/product-chat.png" alt="Chat messaging; Well of course!">
+            </div>
+        </div>
+    </section>
+    <section class="product__feature">
+        <div class="content" id="product-file">
+            <div class="feature-desc">
+                <h2>All your files..</h2>
+                <p>With powerful file-sharing features, you can <b>upload, view, collaborate and share files</b> with your colleagues or teams and keep them in sync under scrutiny of advanced security!</p>
+                <p> <a data-toggle="modal" data-target="#feature-video-modal" data-video="https://www.youtube.com/embed/rhpAGHo1CWQ?list=PLV7TgSx6E1tNu2tMu0DPpSxYLfbDEEv8y;&amp;autoplay=1">See how file-sharing works &gt;</a></p>
+            </div>
+            <div class="feature-screen" data-toggle="modal" data-target="#feature-video-modal" data-video="https://www.youtube.com/embed/rhpAGHo1CWQ?list=PLV7TgSx6E1tNu2tMu0DPpSxYLfbDEEv8y;&amp;autoplay=1">
+                <svg class="play" viewBox="0 0 230 230" xmlns="http://www.w3.org/2000/svg" style="display: inline;">
+                    <g class="video-play-icon">
+                        <path class="play-icon-shape" fill="#D8D8D8" opacity="0.6" stroke-width="10" stroke="#979797" d="m115,218c56.88533,0 103,-46.11467 103,-103c0,-56.88533 -46.11467,-103 -103,-103c-56.88533,0 -103,46.11467 -103,103c0,56.88533 46.11467,103 103,103z"></path>
+                        <path class="play-icon-shape triangle" fill="#979797" opacity="0.6" d="m96.243385,156.810455c-4.297058,2.494705 -7.780502,0.497131 -7.780502,-4.474564l0,-75.571342c0,-4.965935 3.487946,-6.966644 7.780502,-4.474564l65.011436,37.743156c4.297028,2.49472 4.292526,6.542053 0,9.034134l-65.011436,37.743179z"></path>
+                    </g>
+                </svg><img class="img-responsive" src="https://gridle.io/img/product/banner-2.png" alt="Safe place for all your files..">
+            </div>
+        </div>
+    </section>
+    <section class="product__feature">
+        <div class="content inverse" id="product-integration">
+            <div class="feature-desc">
+                <h2>And, Gridle talks with your apps</h2>
+                <p>Making Gridle better is literally in your hands. Integrate applications and services you already use to get notifications right within Gridle. More power to you.</p>
+            </div>
+            <div class="feature-screen static">
+                <div class="image-container"><img class="logo-image" src="https://gridle.io/img/logos/do-icon.svg" alt="Gridle Logo"><img class="wow tool-animation" src="https://gridle.io/img/homepage/integration-transparent.png" alt="Integration Tools" data-wow-delay="1s" data-wow-offset="50" style="visibility: visible; animation-delay: 1s; animation-name: toolsAnimation;"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="menu">
+                <h4>About Gridle</h4>
+                <ul>
+                    <li><a href="/product">Product</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="https://blog.gridle.io" target="_blank">Blog</a></li>
+                    <li><a href="/press">Press</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h4>Case Studies</h4>
+                <ul>
+                    <li><a href="/case-study-design">How Glazz uses Gridle</a></li>
+                    <li><a href="/case-study-information-technology">How You Dedicated uses Gridle</a></li>
+                    <li><a href="/case-study-human-resources">How wWhere uses Gridle</a></li>
+                    <li><a href="/case-study-deal-flow">How IFP uses Gridle</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="/contact">Contact @ Gridle</a></li>
+                    <li><a href="https://calendly.com/gridle" target="_blank">Request a demo</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="/terms-of-services">Terms of use</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <a class="app" href="https://play.google.com/store/apps/details?id=io.gridle&amp;hl=en" target="_blank" title="Get Gridle app on Google play store"><img src="https://gridle.io/img/homepage/get-it-google-play.svg" alt="Gridle android app"></a>
+                <a class="app" href="https://itunes.apple.com/us/app/gridle-productivity-app/id1190333192" target="_blank" title="Get Gridle app on app store"><img src="https://gridle.io/img/homepage/get-it-on-appstore.svg" alt="Gridle on ios"></a>
+                <a class="app" href="https://reviews.financesonline.com/p/gridle/" target="_blank"><img src="https://financesonline.com/seal/seal.png" style="width: 146px;" alt="Gridle review on financesonline.com"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">© 2018 Gridle.io</p>
+            <div class="social-menu">
+                <a class="twitter-icon" href="https://twitter.com/gridle_io" target="_blank" title="Gridle on Twitter">
+                    <svg class="footer-icon">
+                        <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                </a>
+                <a class="linkedin-icon" href="https://www.linkedin.com/company/gridle-in" target="_blank" title="Gridle on linkedin">
+                    <svg class="footer-icon">
+                        <use xlink:href="#icon-linkedin"></use>
+                    </svg>
+                </a>
+                <a class="facebook-icon" href="https://www.facebook.com/gridle.io" target="_blank" title="Gridle on Facebook">
+                    <svg class="footer-icon">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator && document.location.hostname == 'gridle.io') {
+            navigator.serviceWorker.register('service-worker.js');
+        }
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!--<script type="text/javascript" src="https://gridle.io/scripts/jquery.min.js"></script>-->
+    <script type="text/javascript" src="https://gridle.io/scripts/transition.js"></script>
+    <script type="text/javascript" src="https://gridle.io/scripts/modal.js"></script>
+    <script type="text/javascript" src="https://gridle.io/scripts/gridle_out_max.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('svg.play').show();
+        });
+
+        $("a[href*=\\#]:not([href=\\#])").click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top - 100
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+
+        $('[data-toggle="switch"]').click(function () {
+            switchImage($(this).attr('data-img-src'));
+            setActiveSection($(this).attr('data-switch-index'));
+        });
+
+        function setActiveSection(index) {
+            $('[data-toggle="switch"]').removeClass('active');
+            $('[data-switch-index="' + index + '"]').addClass('active');
+        }
+
+        function switchImage(src) {
+            $('#switcherImage').attr('src', src);
+        }
+
+        $('[data-target="#feature-video-modal"]').on('click', function (event) {
+            console.log($(this).attr("data-video"));
+            console.log($("#tour-video-modal").find('iframe')[0].src);
+            $("#feature-video-modal").find('iframe')[0].src = $(this).attr("data-video");
+        });
+
+        $("#feature-video-modal").on('hidden.bs.modal', function () {
+            $(this).find('iframe')[0].src = "";
+        });</script>
+    
+
+</body>
+</html>
